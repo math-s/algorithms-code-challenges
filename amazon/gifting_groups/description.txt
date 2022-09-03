@@ -1,0 +1,13 @@
+Gifting groups (Amazon Interview Question)
+At audible, a subscriber can gift an audiobook from his library to any other non-subscriber to kick start their journey. 
+The first time subscriber can receive up to a max of N audiobooks from their friends/relatives. 
+When a non-subscriber receives an audiobook, we can infer that the two may be related. Similarly, if the non-subscriber receives gifted books from two other subscribers, we can infer that all of them are related, and the three of them form a group.
+More formally, a group is composed of all of the people who know one another, whether directly or transitively.
+Help finding out the number of such distinct groups from the input data.
+Example Consider the following input matrix M:
+
+110
+110
+001
+
+Every row corresponds to a subscriber and the value M[j] determines if j was gifted a book by i. In the above example, user 0 has gifted a book to user 1 and so they are connected [0][1], while person 2 has not received a book from anyone or gifted a book to anyone. Therefore, there are 2 groups.
